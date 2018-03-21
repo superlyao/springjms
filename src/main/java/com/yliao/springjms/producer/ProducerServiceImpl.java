@@ -14,6 +14,7 @@ public class ProducerServiceImpl implements ProducerService {
 
     @Resource(name = "topicDestination")
     private Destination destination;
+
     public void sendMessage(final String message) {
 
         //使用jms来发送消息
